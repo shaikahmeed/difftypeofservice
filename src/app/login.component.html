@@ -1,0 +1,9 @@
+<div>
+    <form>
+        <h4>Services in Angular</h4>
+        Username: <input type="text" [(ngModel)]="username" name="username" #T1><br>
+        Password: <input type="password" [(ngModel)]="password" name="password"><br>
+        <input type="submit" (click)="Login(T1)" value="Login"><br>
+        {{msg}}
+    </form>
+</div>

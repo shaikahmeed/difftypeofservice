@@ -1,0 +1,31 @@
+Services in Angular:
+- A service in angular is a class contains re-usable code(businuss logic, validation, calculations etc.) which can be called in one or more components and also into any other service as well.
+- To create a service class we use a decorator i.e. "@Injectable()" it is used to make the sevice accessible from anyother component.
+- @Injectable() is availble in "@angular/core" library.
+- To use the service in component, we use "Depedency Injuction".
+- "Depedency Injuction" is a design pattern which is used to maintain the objects efficiantly and also used to make application as loosly coupled.
+- syntax:
+import {Injectable} from '@angular/core';
+
+@Injectable()
+
+export class ServiceClass
+{
+    properties;
+    methods;
+}
+- To consume the service we have 2 approches
+    - From the Component section using "providers".
+    - From the Module section using "providers".
+Note: 
+- To create a service by using Angular CLI we use a command "ng g service Name".
+- We can't share data among two sibling components directly, but we can do that by using service.
+
+HttpClient:
+- It is a pre-defined clas which is used to connect to the servers.
+- This class can also be used to make Rest API calls.
+- HttpClient it is avaible in the package "@angular/common/http";
+- This class will return the data in the form of "Observable".
+- "Observable" is used to recive the continues updates from the server wheneven the content is upated.
+- "Observable" is avaiable in "rxjs", where it stands for reactive extension for javascript.
+Note: In module we have to define HttpClinetModule class which is avaible in "@angular/common/http";

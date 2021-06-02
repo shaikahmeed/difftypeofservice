@@ -1,0 +1,17 @@
+<div class="container">
+    <h1 class="text-center text-success">Countries Information</h1>
+    <table class="table table-hover">
+        <tr>
+            <th>Name</th>
+            <th>Capital</th>
+            <th>Flag</th>
+        </tr>
+        <tr *ngFor="let x of countries">
+            <td>{{x.name}}</td>
+            <td>{{x.capital}}</td>
+            <td>
+                <img [src]="x.flag" height="50" width="50" alt="Countris Flag">
+            </td>
+        </tr>
+    </table>
+</div>
